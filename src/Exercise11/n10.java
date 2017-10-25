@@ -2,7 +2,7 @@ package Exercise11;
 import java.util.Scanner;
 
 public class n10 {
-    public void n10() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         final int length = 109;
         int v = sc.nextInt();

@@ -3,13 +3,12 @@ package Exercise21;
 import java.util.Scanner;
 
 public class n1 {
-    public static void n1() {
-        Scanner scn = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int q = 2;
-        byte n = scn.nextByte();
-        if (n<33) {
-            q <<= n-1;
-            System.out.println(q);
-        }
+        int n = sc.nextInt()-1;
+        if (n>-1) q <<= n;
+        else q>>=1;
+        System.out.println(q);
     }
 }
