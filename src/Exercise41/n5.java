@@ -5,22 +5,16 @@ import java.util.Scanner;
 public class n5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        int q = 0;
-        if (a==b) {
-            q=2;
-            if (b==c) q++;
+        double a = sc.nextDouble();
+        int n = sc.nextInt();
+        int res = 1;
+        while (n>0) {
+            if (n%2==1) {
+                res *= a;
+            }
+            a *= a;
+            n /= 2;
         }
-        if (a==c) {
-            q=2;
-            if (b==c) q++;
-        }
-        if (c==b) {
-            q=2;
-            if (a==c) q++;
-        }
-        System.out.println(q);
+        System.out.println(res);
     }
 }
